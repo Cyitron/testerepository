@@ -1,0 +1,107 @@
+# CSS GRID
+
+/**
+- Bidimensional
+- Divisão de toda a página em linhas e colunas
+- Colocar elementos aonde quiser nessa divisão
+- Usar em conjunto com flexbox!
+*/
+
+/** Propriedades
+
+display: grid; inicia o container
+grid-template
+	grid-template-columns
+	grid-template-rows; quantas linhas, colunas ou os 2 juntos existem na página
+grid-gap
+	grid-row-gap
+	grid-column-gap; diz sobre os espaçamentos
+grid-templete-areas
+
+grid-column
+	grid-column-start
+	grid-column-end; aonde vai ficar o item dentro das colunas
+
+grid-row
+	grid-row-start
+	grid-row-end; onde vai ficar o item nas linhas
+
+grid-area; só se tiver o "grid-templete-areas"
+*/
+
+html, body {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/**iniciar o grid! */
+.container {
+	display: grid;
+	grid-template-columns: 3fr 1fr; /** fr é "flexivel" e o numero representa a proporção que vai ocupar na pagina, separamos em 2 colunas*/
+	grid-template-rows: 100px 70vh 10vh; /** vh é "altura visivel na tela" que sempre preenchera, 3 linhas em diverentes proporções */
+	grid-gap: 10px; /**espaço entre as linhas e colunas*/
+	background-color: green;
+	grid-template-areas: "header header"
+						"main aside"
+						"footer footer" /** 3 linhas e 2 colunas */
+}
+
+header {
+	background-color: yellow;
+	height: 100%;
+	/** grid-column-start: 1; *ou pode fazer grid-column: 1/3;
+		grid-column-end: 3;
+		grid-column-start: 1;
+		grid-column-end: 2; */
+	grid-area: header; /**para invocar o grid-templete-areas */
+}
+
+main {
+	background-color: yellow;
+	height: 100%;
+	grid-area: main;
+}
+
+aside {
+	background-color: black;
+	height: 100%;
+	grid-area: aside;
+}
+
+footer {
+	background-color: black;
+	height: 100%;
+	grid-area: footer;
+}
+
+/** ALINHAMENTOS obs: ele só é usado se o grid for configurado com px ou espaço livre para o grid se movimentar */
+/**	justfy-content
+	align-content
+	justify-items
+	align-items
+	justfy-self
+	align-self */
+
+/** justfy e align estão relacionados ao eixo X justfy(horisontal) e Y align(vertical) */
+
+/** content é o "conteudo" inteiro, ou o grid disponivel
+	start
+	end
+	center
+	stretch (esse é o padrão se tiver linhas e colunas flexiveis)
+	space-around
+	space-between
+	space-evenly */
+
+/**	items permite alinhar os itens do grid em qualquer espaço disponivel na celula que ele estiver
+	start
+	end
+	center
+	stretch */
+
+/**	self faz a mesma coisa que o "items" porem aplicado no item de um grid ex: dentro de uma classe;
+	start
+	end
+	center
+	stretch */

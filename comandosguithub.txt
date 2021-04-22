@@ -1,0 +1,50 @@
+mkdir (nome) - criar pasta de um projeto
+
+ls - mostra as pastas aonde voce esta
+
+clear - limpa a tela
+
+cd (nome) - entra na pasta
+
+pwd - mostra o caminho de pastas até a sua pasta atual
+
+git init - iniciar repositório
+
+ls -h - mostra em detalhes a pasta onde voce esta
+
+git status - da um relatorio preliminar do teu projeto
+
+git add (nome do código) - para o git começar a trakear as mudanças
+
+git commit -m "(mensagem)" - dar um snap no arquivo com uma mensagem
+
+git log - histórico do projeto
+
+git remote add (nome) (link do repositório) - adicionando um repositório remoto ao seu projeto
+
+git push -u (nome do repositório pra enviar) (nome do branch) - envia teu arquivo commitado para o repositório remoto
+
+git push - depois da primeira vez, na mesma pasta ele ja sabe para qual repositório mandar
+
+git checkout -b (nome) - cria um novo branch e vai para ele
+
+git checkout (master/ou outro nome) - volta para o branch desejado
+
+git checkout -d (nome) - remove o branch desejado
+
+git pull - atualiza teu repositório local para a mais nova versão
+
+git merge (nome de um branch) - mescla o branch selecionado para o seu branch ativo
+
+git diff (branch origem) (branch destino) - ver uma pré visualização do merge
+
+git log - obtem o ID do commit de seu repositório
+
+git tag (numeros) (ID do commit) - cria um rótulo para seu "release"
+
+git checkout -- (arquivo) - sobre escreve todas as alterações locais com o conteúdo mais recente do repositório
+
+git fetch
+git reset --hard origin/master - remove todas as alterações e commits locais, recupera o histórico mais recente do servidor
+
+touch (nome do arquivo com o tipo) - cria um tipo de arquivo aonde voce está

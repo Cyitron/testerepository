@@ -1,0 +1,131 @@
+/**comentarios de css */
+
+* {
+	box-sizing: border-box; /*para valer para todo o código*/
+
+}
+
+h1{ /**aqui seleciona todas as TAGs do arquvido html */
+	color: blue; 
+}
+
+.segundoh1{ /** aqui seleciona uma classe, um atributo de uma TAG */
+	color: red;
+} /**tu usa classes para dar atributos para mais de um elemento */
+
+#h1{ /** aqui seleciona uma ID para dar atributos para apenas um elemento especifico */
+	color: green;
+}
+
+/** diferentes maneiras de atribuir cores:
+nome da cor: red, white, blue;
+hexadecimal #000000
+rgb(0,0,255)
+rgba(0,0,255,0.6) o ultimo valor é a opacidade!;
+ */
+
+ .container{
+ 	font-family: arial, helvetica, sans-serif;
+ 	font-size: 20px; /**tamanho da fonte, o padrão é 16px */
+ 	font-weight: bold; /** negrito */
+ 	width: 900px; /** largura do espaço ocupado da pagina limitando a direita*/
+ 	/**se fosse % ela interage com aumento e diminução do browser*/
+ 	margin: auto; /** a margem fica igual dos 2 lados*/
+ 	padding: 20px; /** espaçamento de linhas e outras tags*/
+ 	border: 5px solid red;
+ 	box-sizing: border-box; /*ao colocar padding para continuar responsivel com o aumento e diminuição do navegador, isso é essencial*/
+
+
+ }
+
+ /* padding = espaçamento de dentro do conteudo
+ margin = espaçamento fora do conteudo
+ border = borda do conteudo
+  todos os espaçamentos tem top, left, right bottom*/
+
+  .main-aside ul{
+  	list-style: none; /*estilo do marcador de lista*/
+  	padding: 0;
+
+  }
+
+  .main-aside{
+  	text-align: center;
+  }
+
+  .main-aside ul a {
+  	text-decoration: none;
+  	color: black;
+  }
+
+  .main-aside ul a:hover { /*quando passar o mouse em cima oq vai acontecer */
+  	color: blue;
+  	cursor: pointer;
+  }
+
+  .main-aside ul a:visited { /*quando ja interagiu com os textos*/
+  	color: green;
+
+  }
+
+  .main-form{
+  	padding-left: 20px;
+  }
+
+  .form-group {
+  	padding-bottom: 10px;
+  }
+
+  .form-group label {
+  	display: block;
+  }
+
+  .form-group input {
+  	padding: 10px;
+  }
+
+  .submit {
+  	padding: 15px;
+  	background-color: #333;
+  	color: #eee;
+  	border: none;
+  }
+
+  .submit:hover {
+  	color: red;
+  	background-color: black;
+  }
+
+  /*positions no css*/
+  /*static
+  	valor padrão e segue o "fluxo da pagina"
+  	relative
+	se comporta normalmente, as bordas são deslocadas em relação a sua posição normal
+  	fixed
+	posiciona em relação a visualização da pagina e bordas são aplicadas e se mantem
+	segue o fluxo da pagina e do scrow!
+  	absolute
+	elemento é posicionado em relação ao elemento "pai" mais proximo com a position relative
+	se não tiver nenhum com a position relative, se posiciona em relação ao body
+  	sticky
+	posicionado em relação ao scrow do mouse e da tela
+	bordas são aplicaveis*/
+
+	/* pseudo classes */
+
+	.pseudo ul {
+		list-style: none;
+	}
+
+	.pseudo ul li:first-child {
+		color: red;
+	}
+
+	.pseudo ul li:nth-child(even) {
+		background-color: #333
+	}
+/* pseudo classes como essa são para dar caracteristicas a um item especifico numa lista ou sequencia
+first-child
+last-child
+nth-child(nº)
+nth-child(even ou odd) par / impar
