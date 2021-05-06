@@ -20,7 +20,7 @@ git commit -m "(mensagem)" - dar um snap no arquivo com uma mensagem
 
 git log - histórico do projeto
 
-git remote add (nome) (link do repositório) - adicionando um repositório remoto ao seu projeto
+git remote set-url (nome) (link do repositório) - adicionando um repositório remoto ao seu projeto
 
 git push -u (nome do repositório pra enviar) (nome do branch) - envia teu arquivo commitado para o repositório remoto
 
