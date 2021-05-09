@@ -1,0 +1,218 @@
+body {
+	font-family: nunito, sans-serif;
+	color: #1c1c1c;
+}
+
+h1, h2, h3 {
+	font-family: Asap, sans-serif
+	color: #000000;
+}
+
+.botao {
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	background-color: #191970;
+	font-size: .9em;
+	border-radius: 3px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #191970;
+}
+
+nav > a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 800;
+	font-size: 32px;
+	font-family: goblin One, serif;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("./imgevideos/brasao_UFSC.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	padding: 20px;
+	color: 191970;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+#sobre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+	background-color: #191970;
+	color: #FFFFFF;
+}
+
+#sobre h2 {
+	color: #FFFFFF;
+}
+
+#sobre p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#sobre .botao {
+	background-color: #f1f1f1;
+	color: #1c1c1c;
+}
+
+#serviços {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+}
+
+#serviços div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+#portifolio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+#portifolio h2 {
+	margin-bottom: 20px;
+}
+
+#portifolio img {
+	width: 100%;
+}
+
+#contato {
+	isplay: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+#contato h2 {
+	color: #000000;
+}
+
+footer{
+	text-align: center;
+	padding: 10px;
+	background-color: #191970;
+	color: #FFFFFF
+}
+
+footer a {
+	text-decoration: none;
+	color: #00FFFF;
+}
+
+@media screen and (min-width: 780px) {
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+	}
+
+	header {
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-width: 250px;
+	}
+
+	#serviços {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	#serviços h2 {
+		text-align: center;
+		width: 100%;
+	}
+
+	#serviços div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 10px;
+	}
+
+	#portifolio {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#portifolio {
+		width: 100%;
+		text-align: center;
+	}
+
+	#fotos img {
+		width: 33.333333%
+	}
+
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#contato h2, #contato p {
+		width: 100%;
+	}
+}
