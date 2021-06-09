@@ -1,0 +1,8 @@
+O que é o Node.js?
+
+Ambiente para trabalhar com JS. Ele empacota e interpreta o código em QUALQUER lugar;
+Principalmente utilizado isso em aplicações WEB, mas pode ir além;
+Desenvolvido pela Maquina Virtual V8 do google;
+A arquitetura do JS é dividida em Call Stack, Callback Queue, Event Loop;
+O node é bom com fluxo de entrada e saida de dados intenso, como streaming e servidor web;
+O node não é recomendado para aplicações que usam muito uso da CPU.
