@@ -1,0 +1,7 @@
+SQL foi por muito tempo a linguagem padrão para armazenamento e uso de dados.
+Seu maior problema se deve ao fato que ela é muito limitante e enrijecida,
+permitindo poucas mudanças em suas leituras e requisições dos códigos.
+
+E por isso teve a necessidade de se criar NoSQL, ou bancos de dados não sequenciados.
+Se tornaram famosos por sua flexibilidade e são ótimos para o começo de qualquer aplicação!
+Alguns bancos de dados NoSQL não tem nem linguagens próprias, podendo usar um simples .json para sua construção.
