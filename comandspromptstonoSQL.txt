@@ -1,0 +1,42 @@
+show dbs - mostra todos os data bases no computador
+
+use (nome do banco de dados) - entra no banco de dados e começa a usar
+
+show collections - mostra as pastas dentro do banco de dados
+
+db.dropDatabase() - apaga o banco de dados no qual está
+
+use (nome de um banco de dados que não existe) - cria um novo banco de dados
+
+db.createCollection('nome da collection') - cria uma coleção
+
+db.nomedaCollection.insert({
+    conteúdo
+}) - insere um conteudo na base de dados
+
+db.nomedaCollection.insert({
+    conteúdo
+}, {
+    conteúdo2
+}) - diversas entradas no banco de dados
+
+db.nomedaCollection.find() - mostra todas as entradas no banco de dados
+
+db.nomedaCollection.find()pretty() - mostra as entradas de forma mais organizada
+
+db.nomedaCollection.find({termo de algum campo ou categoria}) - procura no banco de dados o termo
+
+db.nomedaCollection.update({algum termo da entrada},
+{
+    novo banco de dados
+}
+{
+    upsert: true
+}
+) - atualiza a entrada apontada ou se não existe, cria uma
+
+db.nomedaCollection.update({algum termo da entrada}, {$inc: {campo da entrada: (algum numero)}}) - incrimenta ou drecementa o campo da entrada apontado
+
+db.nomedaCollection.update({algum termo da entrada}, {$rename:{campo da entrada}})
+
+db.nomedaCollection.remove({algum termpo da entrada}) - remove uma entrada do banco de dados
